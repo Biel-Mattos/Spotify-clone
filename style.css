@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.traco{
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    background-color: rgb(29, 29, 29);
+}
+
+.side_bar{
+    width: 250px;
+    height: 100vh;
+    background-color: black;
+}
+
+.logo{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 150px;
+    width: 100%;
+}
+
+.menu{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu i{
+    font-size: 22px;
+    margin-right: 20px;
+    color: rgb(190, 190, 190);
+    margin-bottom: 25px;
+}
+
+.menu a:focus{
+    color: white;
+}
+
+.menu a{
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 45px;
+}
+
+.menu2 i{
+    font-size: 22px;
+    margin-right: 20px;
+    color: rgb(124, 124, 124);
+    margin-bottom: 25px;
+}
+
+.menu2 a{
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu2 a:focus{
+    color: white;
+}
+
+.mais{
+    background-color: #ccc;
+    padding: 1px 5px;
+}
+
+.topo{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: calc(100% - 250px);
+    height: 60px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.topo img{
+    display: none;
+}
+
+.entrar{
+    background-color: white;
+    color: black;
+    padding: 13px 25px;
+    margin-right: 55px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.title{
+    position:absolute;
+    top: 85px;
+    margin-left: 25px;
+}
+
+.title h1{
+    color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_cards{
+    display: flex;
+}
+
+.cards{
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    flex-direction: column;
+    position: relative;
+    top: 145px;
+    margin-left: 25px;
+    background-color: rgb(44, 43, 43);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cards img{
+    max-width: 150px;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.info h1{
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.info p{
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards:hover{
+    background-color:  rgb(59, 58, 58);
+}
+
+
+.bars{
+    display: none;
+}
+
+
+.bars i{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:  gray;
+}
+
+
+
+/* tela responsivas */
+
+
+@media screen and (max-width:1100px){
+    .side_bar{
+        display: none;
+    }
+
+    .topo{
+        width: 100%;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .topo a{
+        display: none;
+    }
+
+    .topo img{
+        display: flex;
+        max-width: 150px;
+        width: 100%;
+    }
+
+    .bars{
+        display: flex;
+    }
+
+    .container_cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards{
+        margin-bottom: 20px;
+    }
+}
